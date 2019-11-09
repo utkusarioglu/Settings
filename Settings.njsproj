@@ -46,6 +46,9 @@
     <TypeScriptCompile Include="src\c_settings.ts" />
     <TypeScriptCompile Include="src\index.ts" />
     <TypeScriptCompile Include="src\m_settings.ts" />
+    <TypeScriptCompile Include="src\m_settings_fs.test.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="src\m_settings_fs.ts" />
     <TypeScriptCompile Include="src\t_settings.ts" />
   </ItemGroup>

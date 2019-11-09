@@ -24,6 +24,6 @@ module.exports = {
         }]
     },
     node: {
-       fs: "empty"
+       fs: "require('fs')"
     }
 };

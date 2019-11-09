@@ -59,7 +59,7 @@ export abstract class M_SettingsFs {
         config_file_relative_directory: t_relativeDirectory,
         config_filename: t_filename,
     ): this {
-        console.log("read starts")
+
         const settings_file: string = config_filename;
         const config_dir: string = config_file_relative_directory;
 
@@ -73,8 +73,6 @@ export abstract class M_SettingsFs {
             Fs.readFileSync(settings_file_absolute_path, { encoding: "utf8" })
                 .toString().trim(),
         );
-
-        console.log("settings retrieved")
 
         this.set_AllSettings(settings);
 
