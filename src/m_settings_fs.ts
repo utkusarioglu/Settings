@@ -8,7 +8,7 @@
 /*
  *	NODE MODULES
  */
-import * as Fs from "fs";
+import * as fs from 'fs';
 
 /*
  *	MIXINS
@@ -70,7 +70,7 @@ export abstract class M_SettingsFs {
 
         // this has to be done with Fs as Storage class is not yet instantiated
         const settings = JSON.parse(
-            Fs.readFileSync(settings_file_absolute_path, { encoding: "utf8" })
+            fs.readFileSync(settings_file_absolute_path, { encoding: "utf8" })
                 .toString().trim(),
         );
 

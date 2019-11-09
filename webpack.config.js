@@ -24,6 +24,6 @@ module.exports = {
         }]
     },
     externals: {
-      fs: "require('fs')"
+        fs: "require('fs')"
     }
 };
