@@ -7,6 +7,7 @@
 declare module '@utkusarioglu/settings' {
     export { M_Settings } from "@utkusarioglu/settings/m_settings";
     export { M_SettingsFs } from "@utkusarioglu/settings/m_settings_fs";
+    export { t_settingsStack } from "@utkusarioglu/settings/t_settings";
 }
 
 declare module '@utkusarioglu/settings/m_settings' {
