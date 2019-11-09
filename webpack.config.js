@@ -22,8 +22,5 @@ module.exports = {
             loader: 'ts-loader',
             exclude: /node_modules/
         }]
-    },
-    externals: {
-        fs: "require('fs')"
     }
 };

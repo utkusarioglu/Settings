@@ -8,7 +8,9 @@
 /*
  *	NODE MODULES
  */
-import * as fs from 'fs';
+// @ts-ignore
+const fs = __non_webpack_require__("fs");
+//import * as fs from 'fs';
 
 /*
  *	MIXINS

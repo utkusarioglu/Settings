@@ -1,4 +1,4 @@
-import * as fs from 'fs';
+const fs = __non_webpack_require__("fs");
 export class M_SettingsFs {
     read_set_AllSettingsFromFile(config_file_relative_directory, config_filename) {
         const settings_file = config_filename;
