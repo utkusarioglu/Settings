@@ -23,7 +23,7 @@ module.exports = {
             exclude: /node_modules/
         }]
     },
-    node: {
-       fs: "require('fs')"
+    externals: {
+      fs: "require('fs')"
     }
 };
