@@ -50,7 +50,7 @@ export interface M_Settings extends M_State, M_Namespace {}
  * @remarks
  * Service: Settings
  */
-export class M_Settings {
+export abstract class M_Settings {
 
 /*
  * ======================================================= Boundary 1 =========

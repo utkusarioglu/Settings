@@ -16,7 +16,7 @@ declare module '@utkusarioglu/settings/m_settings' {
     import { t_settingsStack } from "@utkusarioglu/settings/t_settings";
     export interface M_Settings extends M_State, M_Namespace {
     }
-    export class M_Settings {
+    export abstract class M_Settings {
         protected get_AllSettings(): Book;
         protected set_AllSettings(settings_stack: t_settingsStack): this;
         protected get_Setting(settings_subproperty: string): t_settingsStack;
