@@ -6,7 +6,6 @@
 
 declare module '@utkusarioglu/settings' {
     export { M_Settings } from "@utkusarioglu/settings/m_settings";
-    export { M_SettingsFs } from "@utkusarioglu/settings/m_settings_fs";
     export { t_settingsStack } from "@utkusarioglu/settings/t_settings";
 }
 
@@ -23,16 +22,6 @@ declare module '@utkusarioglu/settings/m_settings' {
         protected get_Setting(settings_subproperty: string): t_settingsStack;
         protected has_Setting(setting_key: string): boolean;
         protected check_set_LocalNamespace(): void;
-    }
-}
-
-declare module '@utkusarioglu/settings/m_settings_fs' {
-    import { M_Settings } from "@utkusarioglu/settings/m_settings";
-    import { t_filename, t_relativeDirectory } from "@utkusarioglu/settings/t_settings";
-    export interface M_SettingsFs extends M_Settings {
-    }
-    export abstract class M_SettingsFs {
-        protected read_set_AllSettingsFromFile(config_file_relative_directory: t_relativeDirectory, config_filename: t_filename): this;
     }
 }
 
